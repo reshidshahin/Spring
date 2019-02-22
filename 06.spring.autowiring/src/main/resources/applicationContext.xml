@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="database" class="com.project.db.Database">
+		<property name="url" value="mysql:localhost8080"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="AA12345aa!"></property>
+	</bean>
+	<bean id="dbConnection" class="com.project.db.DBConnection" autowire="byName"></bean>
+
+</beans>
